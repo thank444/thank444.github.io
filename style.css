@@ -1,0 +1,99 @@
+html{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Caveat', cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1:after {
+  content: "COMING SOON!";
+  animation: dots 4s linear infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "C";
+  }
+  5% {
+    content: "CO";
+  }
+  10% {
+    content: "COM";
+  }
+  15% {
+    content: "COMI";
+  }
+  20% {
+    content: "COMIN";
+  }
+  25% {
+    content: "COMING";
+  }
+  30% {
+    content: "COMING S";
+  }
+  35% {
+    content: "COMING SO";
+  }
+  40% {
+    content: "COMING SOO";
+  }
+  45% {
+    content: "COMING SOON";
+  }
+  50% {
+    content: "COMING SOON!";
+  }
+  100% {
+    content: "COMING SOON!";
+  }
+}
+
+#logo {
+  width: 200px;
+  position: relative;
+  top: -120px;
+}
+
+#bunny {
+  position: fixed; bottom: -320px; right:100px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  top: -100px;
+  margin-left: 100px;
+}
+
+h1 {
+  font-size: 5rem;
+  padding: 0;
+  margin:0;
+  position: relative;
+  top: -100px;
+}
+
+h3 {
+  font-size: 2rem;
+  position: relative;
+  top: -130px;
+}
+
+#wavy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+  transform: rotate(5deg);
+}
